@@ -3,8 +3,6 @@ package ntp
 // Config NTP server config
 type Config struct {
 	Listener string
-
-	PRN string
 }
 
 // ElasticSearchConfig elastic seach cluster config

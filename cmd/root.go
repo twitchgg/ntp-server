@@ -34,9 +34,7 @@ var ntpCmd = &cobra.Command{
 func initNTP() {
 	var err error
 	var s *ntp.Server
-	var prn string
 	if s, err = ntp.NewServer(&ntp.Config{
-		PRN:      prn,
 		Listener: ntpEnvs.ntpBindAddr,
 	}); err != nil {
 		logrus.WithField("prefix", "ntp").
@@ -59,7 +57,7 @@ func init() {
 	ntpCmd.Flags().StringVar(&ccmd.GlobalEnvs.LoggerLevel,
 		"logger-level", "DEBUG", "logger level")
 	ntpCmd.Flags().StringVar(&ntpEnvs.ntpBindAddr,
-		"ntp-bind", "0.0.0.0:123", "NTP server bind address")
+		"ntp-bind", "udp://0.0.0.0:123", "NTP server bind address")
 }
 
 // Execute TSA KMC main
