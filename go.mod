@@ -10,7 +10,7 @@ require (
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/viper v1.12.0
 	github.com/x-cray/logrus-prefixed-formatter v0.5.2
-	ntsc.ac.cn/ta-registry v0.0.0
+	ntsc.ac.cn/tas/tas-commons v0.0.0
 )
 
 require (
@@ -39,4 +39,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.0 // indirect
 )
 
-replace ntsc.ac.cn/ta-registry v0.0.0 => ../ta-registry
+replace ntsc.ac.cn/tas/tas-commons v0.0.0 => ../tas-commons

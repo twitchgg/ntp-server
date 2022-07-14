@@ -7,8 +7,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	ccmd "ntsc.ac.cn/ta-registry/pkg/cmd"
 	"ntsc.ac.cn/ta/ntp-server/internal/ntp"
+	ccmd "ntsc.ac.cn/tas/tas-commons/pkg/cmd"
 )
 
 var ntpEnvs struct {
